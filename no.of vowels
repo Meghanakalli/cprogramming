@@ -1,0 +1,18 @@
+#include<stdio.h>
+int count_vowels(char []);
+int check_vowel(char);
+
+int main()
+{
+   char array[100];
+   int c;
+   
+   printf("Enter a string\n");
+   gets(array);
+   
+   c = count_vowels(array);
+   
+   printf("Number of vowels: %d\n", c);
+   
+   return 0;
+}
