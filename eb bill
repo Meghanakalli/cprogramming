@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>  
+void main()
+{  
+   int custname, ebno, address,conu;
+   float chg;
+
+
+   printf("Input Customer name :");
+   scanf("%d",&custname);
+   printf("Input eb no of the customer :");
+   scanf("%s",ebno);
+   printf("Input the address of the customer : ");
+   scanf("%d",&address);
+   printf("input unit consumed by customer :");
+   scanf("%d",&conu);
+   if (conu<=100 && conu>200 )
+	chg = 1.50;
+   else	if (conu<=200 && conu<300)
+		chg = 2.50;
+	else if (conu<300)
+			chg = 3.50;
+
+   printf("\nElectricity Bill\n");
+   printf("Customer name :%d\n",custname);
+   printf("Customer ebno  :%s\n",ebno);
+   printf("unit Consumed  :%d\n",conu);
+
+}
