@@ -1,0 +1,8 @@
+#include <stdio.h> 
+
+int main() { 
+  char user_str[20]; 
+  scanf("%s", user_str);
+  printf("%s\n", user_str); 
+  return 0; 
+}
